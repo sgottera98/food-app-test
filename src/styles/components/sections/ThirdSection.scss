@@ -1,0 +1,42 @@
+section {
+    
+    .third-section {
+        display: flex;
+        padding: 0 rem(20);
+
+       .image-section {
+           display: none;
+           justify-content: center;
+       }
+
+        .wrap-section-text {
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: $desktop-lg) {
+    section {
+    
+        .third-section {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: center;
+            justify-content: center;
+            padding: rem(81) rem(163) rem(215) rem(245);
+            // padding: rem(0) rem(163) rem(0) rem(245);
+            
+    
+            .image-section {
+                display: flex;
+                grid-row: 1;
+                grid-column: 2;
+            }
+            
+            .wrap-section-text {
+                grid-column: 1;
+                text-align: left;
+            }
+        }
+    }
+}
