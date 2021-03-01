@@ -1,10 +1,10 @@
 section {
   
     .first-section {
-        height: rem(608);
+        height: auto;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: flex-end;
         padding-bottom: rem(49);
         border-bottom: solid 1px #E4E4E4;
 
@@ -24,22 +24,9 @@ section {
             position: relative;
             align-items: flex-start;
             justify-content: center;
-            margin-top: rem(200);
+
+            margin-top: rem(100);
     
-            .first-smartphone {
-                position: absolute;
-                width: rem(350);
-                top: rem(-150);
-                z-index: 1;
-            }
-    
-            .second-smartphone {
-                display: flex;
-                position: absolute;
-                width: rem(180);
-                margin-left: rem(150);
-                
-            }
         }
     }
 }
@@ -50,8 +37,12 @@ section {
         height: auto;
         
         .first-section {
+            height: rem(608);
             margin: 0 rem(278) 0 rem(278);
             padding-bottom:rem(71);
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: row;
 
             .title-first-section {
                 font-weight: $regular;
@@ -59,22 +50,14 @@ section {
                 letter-spacing: .1px;
             }
     
-            // .smartphones-first-section{
-            //     display: flex;
-            //     position: absolute;
-            //     top: rem(400);
-        
-            //     .first-smartphone {
-            //         width: rem(450);
-            //         top: rem(-150);
-            //     }
-        
-            //     .second-smartphone {
-            //         width: rem(230);
-            //         margin-left: rem(200);
-            //         top: rem(60);
-            //     }
-            // }
+            .smartphones-first-section{
+                display: flex;
+                position: absolute;
+
+                img {
+                    width: rem(550);
+                }
+            }
         }
     }
 }
