@@ -4,13 +4,19 @@ section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: rem(65) rem(20) 0 rem(20);
+        padding: rem(65) rem(20) rem(65) rem(20);
         height: auto;
 
         .image-section {
-            display: none;
+            display: flex;
             justify-content: center;
             align-items: center;
+
+            img {
+                width:80%;
+                border: solid .1px $color-light-gray;
+                    border-radius: rem(30);
+            }
             
        }
 
@@ -35,6 +41,10 @@ section {
             .image-section {
                 display: flex;
                 grid-row: 1;
+
+                img {
+                    width:40%;
+                }
             }
             
             .wrap-section-text {

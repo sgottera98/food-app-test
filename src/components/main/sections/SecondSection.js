@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Smartphone from '../../../assets/images/smartphone-second-section.png'
+import Smartphone from '../../../assets/images/login.png'
 
 const SecondSection = () => {
     return (
