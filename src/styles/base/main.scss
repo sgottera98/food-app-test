@@ -52,10 +52,9 @@ button {
     padding: 0;
 }
 
-
 .container {
     margin: 0 auto;
-    height: 100%;
+    padding: 0 rem(5);
 }
 
 .title {
@@ -71,14 +70,14 @@ button {
 
 @media screen and (min-width: $desktop-lg) {
     .container {
-        // width: $container-xl;
-        // margin: 0 auto;
+        width: $container-xl;
+        margin: 0 auto;
     }
 }
 
 @media screen and (min-width: $desktop-xxl) {
     .container {
-        // width: $container-xxl;
-        // margin: 0 auto;
+        width: $container-xxl;
+        margin: 0 auto;
     }
 }

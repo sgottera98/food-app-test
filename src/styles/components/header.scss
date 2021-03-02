@@ -3,16 +3,14 @@ header {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    padding: rem(50) 0 rem(285) 0;
     
     .wrap-header-content {
+        height: 100vh;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         color: $color-sonic-silver;
-        padding: 0 rem(5);
-
 
         .header-title {
             font-weight: $bold;
@@ -74,7 +72,6 @@ header {
         background-position: center;
         background-size: cover;
         color: $color-white;
-        padding: rem(73) rem(252) rem(146) rem(252);
         
         .wrap-header-content {
     
@@ -86,6 +83,10 @@ header {
     
             .supertitle{
                 margin-top: rem(17);
+                font-size: rem(58);
+                font-weight: $bold;
+                line-height: rem(80);
+                letter-spacing: .2px;
                 color: $color-white;
             }
     
